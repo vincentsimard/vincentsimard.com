@@ -58,12 +58,12 @@
 				<a href="#hero_3" class="right3">3</a>
 				<a href="#hero_2" class="left2">2</a>
 				<div class="slider">
-					<section class="hero" id="hero-hire_1">
+					<section class="hero" id="hero-home_1">
 						<h3>I craft amazing things for the web</h3>
 						<p>O hai! Plz to has <em>superb</em> webzone? kthx bai.</p>
 					</section>
 					<!-- End #hero-hire_1 -->
-					<section class="hero" id="hero-hire_2">
+					<section class="hero" id="hero-home_2">
 						<h3>What can I do for you?</h3>
 						<ul>
 							<li>Web Design & Development</li>
@@ -75,15 +75,15 @@
 						<p class="more"><a href="mailto:vincent@vincentsimard.com" title="Contact Vincent Simard">Drop me a line</a></p>
 					</section>
 					<!-- End #hero-hire_2 -->
-					<section class="hero" id="hero-hire_3">
-						<h3>Hire me</h3>
-						<p class="na">I am not available at the moment.</p>
-						<p>Currently working at <em><a href="http://teksystems.com/">TEKSystems' <abbr title="Montreal Solutions Centre">MSC</abbr></a></em></p>
-						<!-- <p class="more"><a href="mailto:vincent@vincentsimard.com" title="Contact Vincent Simard">Get in touch</a></p> -->
+					<section class="hero" id="hero-home_3">
+						<h3>Currently working at <em><a href="http://teksystems.com/">TEKSystems' <abbr title="Montreal Solutions Centre">MSC</abbr></a></em></h3>
+						<p class="more"><a href="mailto:vincent@vincentsimard.com" title="Contact Vincent Simard">Get in touch</a></p>
+						<!--
 						<figure class="hero-img">
 							<figcaption><img src="media/ipad-caption.png" alt="Random iPad shot" id="ipad-caption" /></figcaption>
 							<img src="media/ipad.png" alt="iPad" />
 						</figure>
+						-->
 					</section>
 					<!-- End #hero-hire_3 -->
 				</div><!-- End .slider -->
