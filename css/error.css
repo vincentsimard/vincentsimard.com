@@ -1,0 +1,27 @@
+﻿/* 
+Title:		Style for vincentsimard.com/ ERROR PAGES
+Author: 	vincent@vincentsimard.com
+*/
+
+
+
+/* LAYOUT
+--------------------------------------------- */
+
+/* BASE STYLES
+--------------------------------------------- */
+
+/* CONTENT
+--------------------------------------------- */
+#error-content h2 {
+	font-size: 96px;
+	line-height: 1;
+}
+
+#error-content h3 {
+	font-size: 28px;
+}
+
+#error-sidebar {
+	margin-top: 146px;
+}

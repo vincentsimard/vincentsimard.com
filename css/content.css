@@ -1,0 +1,24 @@
+﻿/* 
+Title:		Style for vincentsimard.com/[CONTENT PAGE]
+Author: 	vincent@vincentsimard.com
+*/
+
+
+
+/* LAYOUT
+--------------------------------------------- */
+
+/* BASE STYLES
+--------------------------------------------- */
+
+/* Latest Sandbox posts
+--------------------------------------------- */
+#content-content h2 {
+	font-size: 72px;
+	line-height: 1;
+}
+
+#content-sidebar h2 {
+	margin-top: 40px;
+}
+

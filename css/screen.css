@@ -1,0 +1,914 @@
+﻿/* 
+Title:		Master styles for screen media
+Author: 	vincent@vincentsimard.com
+*/
+
+
+
+@import url("fonts/Sentinel-fontfacekit/stylesheet.css");
+
+
+
+/* REFERENCES
+--------------------------------------------- */
+/* Colour palette
+--------------------------------------------- */
+/* Based on Navy Green palette by sonialatendresse on colourlovers.com
+ *
+ * Turquoise:   #1e6f9c	rgb(30,111,156)
+ * Dark blue:   #061e2b rgb(6,30,43)
+ * Grass green: #51a305	rgb(81,163,5)
+ *
+ * Purple:      #c00589	rgb(192,5,137)
+ */
+
+/* Typography
+--------------------------------------------- */
+/* Body Type:		11px/2.4	Arial, Helvetica, sans-serif;
+ * Display Type:				'Sentinel', Georgia, 'Times New Roman', serif;
+ */
+
+
+
+/* BASE STYLES
+--------------------------------------------- */
+body {
+	background: #fff url('../media/bg.png') repeat-x 0 160px;
+	color: #333;
+	font: 11px/2.4 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', sans-serif;
+	font: 12px/2 Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Sentinel', Georgia, 'Times New Roman', serif;
+	line-height: 1;
+}
+
+h1 { font-size: 36px; font-weight: bold; }
+h2 { font-size: 30px; font-weight: bold; }
+h3 { font-size: 24px; }
+h4 { font-size: 21px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+ol { list-style: decimal; }
+ul { list-style: disc; }
+li { margin-left: 30px; }
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+blockquote {
+	margin-bottom: 20px;
+}
+
+small {
+	font-size: 0.85em;
+}
+
+abbr {
+	border-bottom: 1px dotted #999;
+}
+
+a {
+	color: #1e6f9c;
+	-webkit-transition: color .5s ease-out;
+	-moz-transition: color .5s ease-out;
+}
+
+a:hover {
+	color: #c00589;
+}
+
+img.frame_60x60 {
+	background: #fff;
+	border: 1px solid #eee;
+	height: 52px;
+	padding: 3px;
+	position: relative;
+	width: 52px;
+}
+
+.more {
+	clear: both;
+}
+
+.more a:after {
+	content: ' »';
+}
+
+.ampersand {
+	font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif;
+	font-style: italic;
+}
+
+
+
+/* NON-SEMANTIC HELPER CLASSES
+--------------------------------------------- */
+.float-left { float: left; }
+.float-right { float: right; }
+
+/* http://sonspring.com/journal/clearing-floats */
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://perishablepress.com/press/2009/12/06/new-clearfix-hack */
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/*
+	The following zoom:1 rule is specifically for IE6 + IE7.
+	Move to separate stylesheet if invalid CSS is a problem.
+*/
+* html .clearfix,
+*:first-child+html .clearfix {
+	zoom: 1;
+}
+
+
+
+/* BASE LAYOUT
+--------------------------------------------- */
+#document > header , #document > footer, section, nav {
+	display:inline;
+	float:left;
+}
+
+#document {
+	margin: 0 auto;
+	width: 960px;
+}
+
+#document > header .avatar,
+#document > header .branding,
+#document > header .contact,
+#document > header > nav,
+#hero-container,
+#hero-container .hero,
+.content,
+.content > section,
+#document > footer,
+#end
+{
+	display: inline;
+	float: left;
+	margin: 0 10px;
+}
+
+#document > header .avatar {
+	height: 60px;
+	width: 60px;
+}
+
+#document > header .branding {
+	height: 60px;
+	position: relative;
+	width: 540px;
+}
+
+#document > header .branding .status {
+	bottom: 0;
+	margin: 0;
+	position: absolute;
+}
+
+#document > header .contact {
+	height: 60px;
+	width: 300px;
+}
+
+#document > header > nav {
+	width: 940px;
+}
+
+#hero-container {
+	height: 320px;
+	margin: -140px 10px 40px 10px;
+	overflow: hidden;
+	padding-top: 220px;
+	position: relative;
+	width: 940px;
+}
+
+#hero-container  .hero {
+	width: 940px;
+}
+
+#hero-container .slider .hero {
+	height: 240px;
+	margin: 0;
+	padding: 40px 80px;
+	position: relative;
+	width: 800px;
+}
+
+#hero-container .slider #hero-hire_3 {
+	padding-right: 480px;
+	width: 400px;
+}
+
+.content {
+	margin: 80px 10px 0;
+}
+
+.content > section {
+	margin-bottom: 80px;
+}
+
+.grid_1 { width: 60px; }
+.grid_2 { width: 140px; }
+.grid_3 { width: 220px; }
+.grid_4 { width: 300px; }
+.grid_5 { width: 380px; }
+.grid_6 { width: 460px; }
+.grid_7 { width: 540px; }
+.grid_8 { width: 620px; }
+.grid_9 { width: 700px; }
+.grid_10 { width: 780px; }
+.grid_11 { width: 860px; }
+.grid_12 { width: 940px; }
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8,
+.push_9, .pull_9,
+.push_10, .pull_10,
+.push_11, .pull_11,
+.push_12, .pull_12,
+.push_13, .pull_13,
+.push_14, .pull_14,
+.push_15, .pull_15 {
+	position: relative;
+}
+
+.prefix_1 { padding-left: 80px; }
+.prefix_2 { padding-left: 160px; }
+.prefix_3 { padding-left: 240px; }
+.prefix_4 { padding-left: 320px; }
+.prefix_5 { padding-left: 400px; }
+.prefix_6 { padding-left: 480px; }
+.prefix_7 { padding-left: 560px; }
+.prefix_8 { padding-left: 640px; }
+.prefix_9 { padding-left: 720px; }
+.prefix_10 { padding-left: 800px; }
+.prefix_11 { padding-left: 880px; }
+
+.suffix_1 { padding-right: 80px; }
+.suffix_2 { padding-right: 160px; }
+.suffix_3 { padding-right: 240px; }
+.suffix_4 { padding-right: 320px; }
+.suffix_5 { padding-right: 400px; }
+.suffix_6 { padding-right: 480px; }
+.suffix_7 { padding-right: 560px; }
+.suffix_8 { padding-right: 640px; }
+.suffix_9 { padding-right: 720px; }
+.suffix_10 { padding-right: 800px; }
+.suffix_11 { padding-right: 880px; }
+
+.push_1 { left: 80px; }
+.push_2 { left: 160px; }
+.push_3 { left: 240px; }
+.push_4 { left: 320px; }
+.push_5 { left: 400px; }
+.push_6 { left: 480px; }
+.push_7 { left: 560px; }
+.push_8 { left: 640px; }
+.push_9 { left: 720px; }
+.push_10 { left: 800px; }
+.push_11 { left: 880px; }
+
+.pull_1 { left: -80px; }
+.pull_2 { left: -160px; }
+.pull_3 { left: -240px; }
+.pull_4 { left: -320px; }
+.pull_5 { left: -400px; }
+.pull_6 { left: -480px; }
+.pull_7 { left: -560px; }
+.pull_8 { left: -640px; }
+.pull_9 { left: -720px; }
+.pull_10 { left: -800px; }
+.pull_11 { left: -880px; }
+
+.alpha { margin-left: 0 !important; }
+.omega { margin-right: 0 !important; }
+
+#document > footer {
+	margin: 0 10px;
+	padding: 80px 0 60px;
+	width: 940px;
+}
+
+#document > footer nav {
+	margin-bottom: 20px;
+}
+
+#document > footer .endnav {
+	float: left;
+	width: 460px;
+}
+
+#document > footer .smallprint {
+	float: right;
+	width: 460px;
+}
+
+#end {
+	margin: 0 10px;
+	padding: 0 0 40px;
+	width: 940px;
+}
+
+
+
+/* TOP-LEFT BANNER
+--------------------------------------------- */
+#ala-banner {
+	background: transparent url('../media/bg-diag_pattern.png') repeat;
+	height: 40px;
+	left: -470px;
+	margin-left: 50%;
+	position: absolute;
+	top: 0;
+	width: 60px;
+}
+
+
+
+/* HEADER & FOOTER
+--------------------------------------------- */
+#document > header {
+	height: 60px;
+	margin: 0;
+	padding: 60px 0 40px 0;
+}
+
+#document > header > * {
+	position: relative;
+	z-index: 5;
+}
+
+#document > header > nav {
+	position: static;
+}
+
+#document > header > nav:after {
+	background-color: rgba(0,0,0,0.025);
+	content: "";
+	display: block;
+	height: 60px;
+	left: 0;
+	position: absolute;
+	top: 160px;
+	width: 100%;
+}
+
+#document > header h1 {
+	font-size: 46px;
+	letter-spacing: 3px;
+	line-height: 30px;
+	margin: 0;
+	text-transform: uppercase;
+	text-shadow: rgba(0, 0, 0, 0.25) 1px 1px 2px;
+}
+
+#document > header h1 a {
+	color: #000;
+	text-decoration: none;
+}
+
+#document > header h1 a:hover {
+	color: #000;
+	/* text-shadow: rgba(30,111,156,0.75) 1px 1px 2px; */
+}
+
+#document > header .status {
+	color: #333;
+	font-family: 'Sentinel', Georgia, 'Times New Roman', serif;
+	font-size: 20px;
+	font-weight: lighter;
+	height: 20px;
+	letter-spacing: 2px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+#document > header .contact {
+	font-family: 'Sentinel', Georgia, 'Times New Roman', serif;
+	font-size: 18px;
+	font-weight: lighter;
+	line-height: 18px;
+}
+
+#document > header .contact a {
+	color: #000;
+	text-decoration: none;
+}
+
+#document > header .contact p {
+	margin: 0 0 5px 0;
+}
+
+#document > footer .contact .telephone:before, #document > footer .contact .email:before {
+	font-size: 1.5em;
+}
+
+#document > header .contact .telephone:before, #document > footer .contact .telephone:before,
+#document > header .contact .email:before, #document > footer .contact .email:before {
+	color: #333;
+	font-family: 'Sentinel', Georgia, 'Times New Roman', serif;
+	font-weight: bolder;
+	padding-right: 1em;
+}
+
+#document > header .contact .telephone:before, #document > footer .contact .telephone:before { content: 't'; font-variant: small-caps; }
+#document > header .contact .email:before, #document > footer .contact .email:before { content: 'e'; }
+
+#document > header .avatar {
+	position: relative;
+	z-index: 10;
+}
+
+#document > header .avatar figcaption {
+	display: none;
+	left: 40px;
+	position: relative;
+	top: -5px;
+}
+
+#document > header .avatar:hover figcaption {
+	display: block;
+}
+
+#document > footer {
+	background: url('../media/bg-footer.png') no-repeat 50% 0;
+	color: #999;
+	font-size: 11px;
+	line-height: 18px;
+	padding-top: 100px;
+}
+
+#document > footer h2 {
+	color: #000;
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 18px;
+	text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px;
+	text-transform: uppercase;
+}
+
+#document > footer h2:after {
+	content: '.com';
+	font-family: 'Sentinel', Georgia, 'Times New Roman', serif;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: lowercase;
+}
+
+#document > footer nav {
+	display: block;
+	float: none;
+	margin-bottom: 20px;
+}
+
+#document > footer .contact {
+	display: block;
+	float: none;
+	margin-bottom: 20px;
+}
+
+#document > footer .contact p {
+	margin: 0;
+}
+
+#document > footer .ampersand {
+	color: #666;
+	font-size: 18px;
+}
+
+#document > footer .copyright em {
+	font-style: normal;
+	font-weight: bold;
+}
+
+#end {
+	clear: both;
+	text-align: center;
+}
+
+#end em {
+	color: #666;
+	font-style: normal;
+	font-weight: bold;
+}
+
+
+
+/* MAIN NAVIGATION
+--------------------------------------------- */
+.mainnav {
+	font-family: 'Sentinel', Georgia, 'Times New Roman', serif;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	list-style-type: none;
+	white-space: nowrap;
+}
+
+.mainnav a {
+	text-decoration: none;
+}
+
+.mainnav li {
+	display: inline-block;
+	margin: 0 15px 0 0;
+}
+
+#document > header nav, #document > footer nav {
+	font-family: 'Sentinel', Georgia, 'Times New Roman', serif;
+	font-size: 12px;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+#document > header nav .active, #document > footer nav .active {
+	color: #061e2b;
+	text-decoration: none;
+}
+
+#document > header .mainnav {
+	letter-spacing: 2px;
+	position: absolute;
+	top: 174px;
+	z-index: 10;
+}
+
+#document > header .mainnav a {
+	height: 20px;
+	padding: 6px 10px;
+}
+
+#document > header .mainnav a.active {
+	background: #fff;
+}
+
+#document > header .mainnav li {
+	margin: 0 5px 0 0;
+}
+
+#document > header .lang {
+	display: block;
+	list-style-type: none;
+	margin: 0 10px 0 0;
+	position: absolute;
+	right: 0;
+	top: 130px;
+	z-index: 10;
+}
+
+#document > header .lang li {
+	display: inline-block;
+	margin: 0 2px 10px;
+}
+
+#document > header .lang a {
+	background: #fff;
+	padding: 4px;
+	text-decoration: none;
+}
+
+
+
+/* HERO SECTION (featured news items)
+--------------------------------------------- */
+/* Hack: Can't add the box-shadow directly to #hero-container because of its padding-top property. Extra narkup line for now. */
+/* TODO: Create another box with pseudos :before or :after for box-shadow. Doesn't work for now because of the overflow:hidden property to hide .hero divs. */
+/*
+#hero-container_shadow {
+	-moz-box-shadow: 4px 4px 2px rgba(0,0,0,0.25);
+	-webkit-box-shadow: 4px 4px 2px rgba(0,0,0,0.25);
+	height: 320px;
+	left: -470px;
+	margin: 220px 10px 40px 50%;
+	position: absolute;
+	top: 0;
+	width: 940px;
+}
+
+#hero-container_shadow:after {
+	background: transparent;
+	border-top: 10px solid rgba(255,255,255,0.1);
+	bottom: 0;
+	content:"";
+	display: block;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 5;
+}
+*/
+
+#hero-container .slider {
+	height: 320px;
+	left: -10px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 220px;
+	width: 2880px; /* 3x 960px */
+}
+
+.hero {
+	background-color: #1e6f9c;
+	background-image: url('../media/bg-grid_pattern_white_80x80.png'), -moz-radial-gradient(center 45deg, circle closest-side, #1e6f9c 0%, #061e2b 250%);
+	background-image: url('../media/bg-grid_pattern_white_80x80.png'), -webkit-gradient(radial, 50% 60%, 400, 50% 40%, 40, from(#061e2b), to(#1e6f9c));
+	background-position: 0 40px, 0;
+	background-repeat: repeat, no-repeat;
+	color: #eee;
+	font-family: 'Sentinel', Georgia, 'Times New Roman', serif;
+	font-size: 30px;
+	height: 240px;
+	line-height: 42px;
+	margin: 0;
+	padding: 40px 0;
+	position: relative;
+}
+
+.hero em {
+	background: rgba(0, 0, 0, 0.25);
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 500;
+	padding: 0 10px 5px;
+}
+
+.hero .more {
+	clear: both;
+	color: #fff;
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 32px;
+	text-align: right;
+}
+
+.hero .more a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.hero .hero-img {
+	bottom: 0;
+	position: absolute;
+	right: 40px;
+	z-index: 5;
+}
+
+.hero .hero-img > img {
+	bottom: 0;
+	position: absolute;
+	right: 0;
+}
+
+.hero h3 {
+	color: #fff;
+	font-size: 92px;
+	font-weight: 500;
+	line-height: 78px;
+	text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 1px;
+}
+
+.hero h3, .hero p, .hero li {
+	margin: 0 10px 20px;
+}
+
+/* Slightly modified version of Neal Grosskopf's great Pure CSS Content Slider
+ * http://www.nealgrosskopf.com/tech/thread.php?pid=45 */
+#hero-container a[class^=left], #hero-container a[class^=right] {
+	background-repeat: no-repeat;
+	display: none;
+	height: 40px;
+	width: 40px;
+	outline-width: 0px;
+	position: absolute;
+	top: 360px;
+	text-indent: -9999px;
+	z-index: 30;
+}
+
+#hero-container a[class^=left], #hero-container a[class^=right] { background-image: url('../media/arrows-sprite.png'); }
+
+#hero-container a[class^="right"], #hero-container a[class^="right"]:active { background-position: right top; }
+#hero-container a[class^="right"]:hover { background-position: right bottom; }
+#hero-container a[class^="left"], #hero-container a[class^="left"]:active { background-position: left top; }
+#hero-container a[class^="left"]:hover { background-position: left bottom; }
+
+#hero-container a[class^="left"] { left: 15px; }
+#hero-container a[class^="right"] { right: 15px; }
+
+/* Default */
+#hero-container :target .right2.default { display: none; }
+
+#hero-container .right2.default,
+#hero-container #hero_1:target .right2,
+#hero-container #hero_2:target .left1,
+#hero-container #hero_2:target .right3,
+#hero-container #hero_3:target .left2
+{ display: block; }
+
+#hero-container #hero_1:target .slider { left: -10px; }
+#hero-container #hero_2:target .slider { left: -970px; }
+#hero-container #hero_3:target .slider { left: -1930px; }
+
+#hero-container .slider {
+	-moz-transition: left .5s ease-in-out;
+	-webkit-transition: left .5s ease-in-out;
+}
+
+/* Hooks */
+#hero_1, #hero_2, #hero_3 {
+	height: 320px;
+	left: 0;
+	margin: -240px 0 0;
+	padding: 0;
+	top: 0;
+	width: 940px;
+}
+/* End of Neal Grosskopf's Pure CSS Content Slider */
+
+
+/* CONTENT
+--------------------------------------------- */
+.content {
+	background: #fff;
+	background: -webkit-gradient(linear, 0% 0%, 0% 50%, from(rgba(255,255,255,0)), to(rgba(255,255,255,1)));
+	background: -moz-linear-gradient(100% 50% 90deg, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+.content h2 {
+	display: block;
+	font-size: 46px;
+	line-height: 1;
+	-webkit-transition: width .3s ease-in-out;
+}
+
+.content h2 a {
+	color: #000;
+	display: block;
+	text-decoration: none;
+}
+
+.content h3 {
+	color: #1e6f9c;
+	font-size: 21px;
+	font-variant: small-caps;
+	font-weight: normal;
+	line-height: 30px;
+	padding: 0;
+}
+
+.content h3 em {
+	color: #061e2b;
+	font-style: normal;
+	font-variant: small-caps;
+}
+
+.content p.more {
+	font-weight: bold;
+}
+
+.content p.more a {
+	text-decoration: none;
+}
+
+.content .more a:after {
+	font-family: 'Sentinel', Georgia, 'Times New Roman', serif;
+	font-size: 14px;
+	font-weight: lighter;
+	line-height: 11px;
+}
+
+.content header {
+	margin-bottom: 20px;
+}
+
+.content header h2, .content header h3 {
+	margin-bottom: 0;
+}
+
+.content header p.info {
+	color: #999;
+	font-family: 'Sentinel', Georgia, 'Times New Roman', serif;
+	font-size: 14px;
+	font-weight: lighter;
+	line-height: 18px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+
+
+/* CONTENT ARTICLE
+--------------------------------------------- */
+.content article header, .content article footer {
+	color: #999;
+	font-family: 'Sentinel', Georgia, 'Times New Roman', serif;
+	font-size: 14px;
+	font-weight: lighter;
+	line-height: 18px;
+}
+
+.content article header p {
+	margin: 0;
+}
+
+.content article header time {
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.content article footer .tags {
+	background: url('../media/icon-tag.png') no-repeat 0 50%;
+	float: left;
+	padding-left: 15px;
+}
+
+.content article footer .tags a {
+	font-family: 'Sentinel', Georgia, 'Times New Roman', serif;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+.content article footer .comments {
+	background: url('../media/icon-chat.png') no-repeat 0 75%;
+	float: right;
+	padding-left: 17px;
+}
+
+.content article footer .comments em {
+	font-style: normal;
+	font-weight: bold;
+}
+
+.content article footer .tags a, .content article footer .comments a {
+	text-decoration: none;
+}
+
+
+
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN
+--------------------------------------------- */
+@media all and (orientation:portrait) {
+	/* Style adjustments for portrait mode goes here */  
+}
+
+@media all and (orientation:landscape) {
+	/* Style adjustments for landscape mode goes here */
+}
+
+/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome) */
+/* www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+	/* Prevent iOS, WinMobile from adjusting font size */
+	html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
+}
+
+
+
+/*
+#document {
+	background: transparent url("../media/12_col.gif") repeat-y center !important;
+	overflow: auto;
+}
+*/

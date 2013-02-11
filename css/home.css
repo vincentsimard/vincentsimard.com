@@ -1,0 +1,295 @@
+﻿/* 
+Title:		Style for vincentsimard.com/ (homepage)
+Author: 	vincent@vincentsimard.com
+*/
+
+
+
+/* LAYOUT
+--------------------------------------------- */
+#hero-hire_3 {
+	padding-right: 480px;
+	width: 400px;
+}
+
+#home-whowhathow {
+	margin: 0 10px 20px;
+	padding: 40px;
+	width: 860px;
+}
+
+#home-whowhathow > section {
+	margin-bottom: 0;
+}
+
+#who {
+	margin-left: 0;
+}
+
+#how {
+	margin-right: 0;
+	width: 380px;
+}
+
+#home-samples > figure
+{
+	display: inline;
+	float: left;
+	height: 200px;
+	margin: 0 10px;
+	overflow: hidden;
+	position: relative;
+	width: 300px;
+}
+
+#home-samples {
+	margin-bottom: 80px;
+}
+
+
+/* BASE STYLES
+--------------------------------------------- */
+body {
+	background-color: #fff;
+	background-image: url('../media/bg-w_hero.png'), url('../media/bg-hero-container.png');
+	background-position: 0 160px, center 530px;
+	background-repeat: repeat-x, no-repeat;
+}
+
+
+
+/* HERO SECTION (featured news items)
+--------------------------------------------- */
+/*
+#hero-container_shadow:hover:after {
+	background: url('../media/hero-caption.png') no-repeat right top;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: -80px;
+}
+*/
+
+#hero-container h2 {
+	display: none;
+}
+
+#hero-hire_1 {
+	background-color: #1e6f9c;
+	background-image: url('../media/bg-grid_pattern_white_80x80.png'), -moz-radial-gradient(center 45deg, circle closest-side, #1e6f9c 0%, #061e2b 250%);
+	background-image: url('../media/bg-grid_pattern_white_80x80.png'), -webkit-gradient(radial, 50% 60%, 400, 50% 40%, 40, from(#061e2b), to(#1e6f9c));
+}
+
+#hero-hire_2 {
+	background-color: #51a305;
+	background-image: url('../media/bg-grid_pattern_white_80x80.png'), -moz-radial-gradient(center 45deg, circle closest-side, #51a305 0%, #061e2b 250%);
+	background-image: url('../media/bg-grid_pattern_white_80x80.png'), -webkit-gradient(radial, 50% 60%, 400, 50% 40%, 40, from(#061e2b), to(#51a305));
+}
+
+#hero-hire_3 {
+	background-color: #c00589;
+	background-image: url('../media/bg-grid_pattern_white_80x80.png'), -moz-radial-gradient(center 45deg, circle closest-side, #c00589 0%, #061e2b 250%);
+	background-image: url('../media/bg-grid_pattern_white_80x80.png'), -webkit-gradient(radial, 50% 60%, 400, 50% 40%, 40, from(#061e2b), to(#c00589));
+}
+
+.hero .hero-img figcaption {
+	bottom: 364px;
+	display: none;
+	position: absolute;
+	right: 242px;
+}
+
+.hero .hero-img:hover figcaption {
+	display: block;
+}
+
+#hero-hire_2 h3 {
+	display: inline;
+	float: left;
+	font-size: 80px;
+	line-height: 76px;
+	width: 300px;
+}
+
+#hero-hire_2 ul {
+	display: inline;
+	float: left;
+	margin: 25px 0 0;
+	width: 480px;
+}
+
+#hero-hire_2 li {
+	background: url("../media/bullet-checkmark_white.png") no-repeat scroll 10px 0.15em transparent;
+	float: left;
+	font-size: 24px;
+	line-height: 1;
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 40px;
+	width: 190px;
+}
+
+#hero-hire_2 p.more {
+	clear: both;
+	position: relative;
+	top: -52px;
+}
+
+#hero-hire_3 h3 {
+	text-decoration: line-through;
+}
+
+#hero-hire_3 p.na {
+	font-size: 16px;
+	line-height: 32px;
+	color: #fff;
+	position: relative;
+	text-indent: 20px;
+	/*
+	-webkit-transform: rotate(-5deg); 
+	-moz-transform: rotate(-5deg);	
+	*/
+}
+
+#hero-hire_3 a {
+	color: #eee;
+	text-decoration: none;
+}
+
+/* HOMEPAGE CONTENT
+--------------------------------------------- */
+/* Who? What? How?
+--------------------------------------------- */
+#home-whowhathow {
+	background: #fff;
+	background: -webkit-gradient(linear, 0% 0%, 0% 50%, from(rgba(255,255,255,0)), to(rgba(255,255,255,1)));
+	background: -moz-linear-gradient(100% 50% 90deg, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+#what .portfolio {
+	clear: both;
+	margin-bottom: 20px;
+	overflow: auto;
+}
+
+#what .portfolio:last-child {
+	margin-bottom: 20px;
+}
+
+#what .portfolio img {
+	float: left;
+}
+
+#what .portfolio h4, #what .portfolio p {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 0 0 80px;
+}
+
+#what .portfolio h4 {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 14px;
+	text-transform: uppercase;
+}
+
+#what .portfolio p {
+	font-size: 11px;
+	line-height: 18px;
+}
+
+#what .portfolio p.date {
+	color: #999;
+	font-style: italic;
+}
+
+#what div:nth-child(2) {
+	margin-bottom: 10px;
+}
+
+#how ol {
+	list-style:decimal inside none;
+}
+
+#how li {
+	margin-left: 0;
+}
+
+
+
+/* WORK SAMPLES
+--------------------------------------------- */
+#home-samples h2 {
+	font-family: 'Sentinel', Georgia, 'Times New Roman', serif;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 24px;
+	margin: 0 10px 20px;
+}
+
+#home-samples figure {
+	background-color: #fff;
+	-moz-box-shadow: 4px 4px 2px rgba(0,0,0,0.25);
+	-webkit-box-shadow: 4px 4px 2px rgba(0,0,0,0.25);
+}
+
+#home-samples figure:after {
+	background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(transparent), to(rgba(0,0,0,0.75)), color-stop(.5,transparent));
+	background: -moz-linear-gradient(100% 100% 150deg, rgba(0,0,0,0.75), transparent, transparent 100%);
+	bottom: 0;
+	content:"";
+	display: block;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 5;
+}
+
+#home-samples figure img {
+	height: 180px;
+	border: 10px solid #f9f9f9;
+	width: 280px;
+}
+
+#home-samples figure figcaption {
+	background: rgba(0,0,0,0.75);
+	bottom: -80px;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	height: 80px;
+	left: 0;
+	line-height: 18px;
+	position: absolute;
+	right: 0;
+	z-index: 10;
+	-webkit-transition: bottom .3s ease-in-out;
+}
+
+#home-samples figure figcaption em {
+	font-family: 'Sentinel', Georgia, 'Times New Roman', serif;
+	font-size: 24px;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+#home-samples figure figcaption a {
+	color: #fff;
+	display: block;
+	height: 60px;
+	padding: 10px 20px;
+	text-decoration: none;
+	width: 260px;
+	
+}
+
+#home-samples figure:nth-child(2) figcaption { background: rgba(30,111,156,0.75); }
+#home-samples figure:nth-child(3) figcaption { background: rgba(81,163,5,0.75); }
+#home-samples figure:nth-child(4) figcaption { background: rgba(192,5,137,0.75); }
+
+#home-samples figure:hover figcaption {
+	bottom: 0;
+}
+
+
