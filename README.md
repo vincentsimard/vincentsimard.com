@@ -3,6 +3,10 @@ vincentsimard.com
 
 ## Log
 
+_2013-02-11_
+Cleaning up old site. Removing everything except useful info.
+Moving files to a git repo / github
+
 _2012-12-06_
 Procrastilaxing.
 Four months later and I have still not updated the site. gah.
