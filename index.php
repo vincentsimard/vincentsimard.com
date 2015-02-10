@@ -20,7 +20,6 @@
 			_gaq.push(['_setAccount', 'UA-347560-1']);
 			_gaq.push(['_trackPageview']);
 			_gaq.push(['_trackPageLoadTime']);
-
 			(function() {
 				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -76,7 +75,7 @@
 					</section>
 					<!-- End #hero-hire_2 -->
 					<section class="hero" id="hero-home_3">
-						<h3>Currently working at <em><a href="http://teksystems.com/">TEKSystems' <abbr title="Montreal Solutions Centre">MSC</abbr></a></em></h3>
+						<h3>Currently looking for new challenges</h3>
 						<p class="more"><a href="mailto:vincent@vincentsimard.com" title="Contact Vincent Simard">Get in touch</a></p>
 						<!--
 						<figure class="hero-img">
